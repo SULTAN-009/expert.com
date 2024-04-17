@@ -1,0 +1,335 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	
+}
+	.logo{
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px 0px;
+	}
+		.nav-links{
+			background: grey;
+			text-align:center;
+		}
+			.nav-links ul li {
+				list-style: none;
+				display: inline-block;
+				padding: 10px 16px;
+				position: relative;
+			}
+			.nav-links ul li a {
+				color: white;
+				text-decoration: none;
+				font-size:18px;
+			}
+		.banner{
+			width: 100%;
+			min-height: 70vh;
+			background: url("../images/a1.jpg") no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+	.text-block {
+		width: 80%;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%,-50%) ;
+		color: white;
+}
+.text-block p{
+	font-size:16px;
+}
+	.btn-primary{
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		border: 2px solid white;
+		padding:12px 36px;
+		font-size: 14px;
+		background: transparent;
+		margin-top:20px;
+	}
+
+		.btn-primary:hover{
+			border: 2px solid #333;
+			background:#00a6fb;
+			color:white;
+			transition:1s;
+		}
+	nav .fa-bars{
+		display : none;
+	}
+	
+nav .fa-times{
+	display:none;
+}
+
+@media(max-width: 700px){
+nav .fa-bars{
+	display : block;
+}
+
+	nav .fa-times{
+		display:block;
+	}
+		
+		.text-block h1{
+			font-size:30px;
+		}
+		
+			.nav-links ul li {
+				display:block;
+			}
+		
+				.nav-links{
+					position: absolute;
+					background: gray;
+					height: 100vh;
+					width: 200px;
+					text-align:left;
+					z-index:2;
+					top:0;
+					left:-200px;
+					transition:1s;
+				}
+		
+			nav .fa-times{
+				display: black;
+				color: white;
+				margin:10px;
+				font-size:22px;
+				cursor: pointer;
+			}
+	
+		.fa-bars{
+			position: absolute;
+			left:10px;
+			top:30px;
+			cursor: pointer;
+			font-size:25px
+		}
+		
+}
+/* Grid System*/
+
+.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	 }
+	[class^="col-"] {
+		box-sizing: border-box;
+		padding: 2; /* Adjust for gutters */
+	}
+			.col-4 {
+			  flex: 0 0 33.33%; /* Each column occupies 33.33% of the row width */
+			  max-width: 33.33%;
+			  border: 1px; 
+			}
+				.col-4 img {
+				  max-width: 80%; /* Ensure images don't exceed the width of their column */
+				  height: 300px ; /* Maintain image aspect ratio */
+				  display:; /* Remove extra spacing below inline images */
+				  position: center;  
+				}
+			.p{
+				display: center;
+			}
+		.text-center{
+			text-align:center;
+		}
+/* Grid System*/
+.col-12{
+  position: relative;
+  width: 100%;
+  padding:20px;
+  background:black;
+}
+.ad-banner img {
+    width: 80%;
+    height:200px;
+    display: block;	
+	margin-left: 20px;
+    margin-right: 20px;	
+}
+/* Define a class col-6 with 50% width */
+.col-6 {
+    width: 50%;
+    float: left; /* Optional: Use float to ensure side-by-side display */
+    /* You might need to adjust margins, padding, and box-sizing depending on your layout */
+    box-sizing: border-box;
+    padding: 0 15px;
+	margin:3px auto;
+	text-align:center;
+}
+.col-6 img{
+	width:80;
+	margin:2px;
+	height:400px;
+}
+.container{
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+@media(max-width: 768px) {
+	.container{
+		max-width:750px;
+	}
+	.col-6 img{
+		max-width:70%;
+		max-height:300px;
+		box-sizing:border-box;
+	}
+	.col-12{
+		width:100%;
+		height:150px;
+	}
+	.col-12 img{
+		width:80%;
+		position:center;
+		height:120px;
+	}
+}
+
+@media(max-width: 992px){
+	.container{
+		max-width:970px;
+	}
+}
+
+@media(max-width: 1200px){
+	.container{
+		max-width:1170px;
+	}
+}
+.secondary-btn{
+		display: inline-block;
+		text-decoration: none;
+		color: #222;
+		border: 2px solid #222;
+		padding:12px 36px;
+		font-size: 14px;
+		background: bule;
+		margin-top:20px;
+		font-size:bold;
+	}
+
+		.secondary-btn:hover{
+			border: 2px solid #333;
+			background:#48cae4;
+			color:#222;
+			transition:1s;
+}
+		
+.col-3{
+	max-width:25%;
+	border: 1px ;
+	margin:auto;
+	padding:10px;
+	text-align: center;
+}		
+.col-3 img {
+	max-width:50%;
+	position: center;
+}
+footer{
+	background:#023e8a;
+	padding:80px 0px;
+	color: white;
+	font-size:bold;
+}
+footer ul li {
+		list-style: none;
+		padding: 10px 10px;
+		position: relative;
+	}
+footer h3{
+	padding: 10px;
+}	
+.copywrite{
+	background:black;
+	color:white;
+	font-size: bold;
+	padding:20px;
+	text-align:center;
+}
+.inner-banner{
+	
+			width: 100%;
+			min-height: 30vh;
+			background:black;
+			background-size: cover;
+			position: relative;
+}
+.about{
+	padding:40px;
+}
+.head{
+	margin-left:40px
+}
+.team col-4 img{
+	display:block;
+	
+}
+.team{
+	text-align:center;
+	margin: 20px 20px 20px 20px;
+}
+.col-9{
+  flex: 0 0 75%; /* Adjust the width as needed */
+  max-width: 75%; /* Adjust the width as needed */
+  text-align:center;
+}
+.col-9 img {
+	width:75%;
+	height:300px;
+	margin:10px;
+
+}
+.blo{
+	padding:5px;
+	font-size:24px;
+}
+.pad{
+	padding:20px;
+	border-right: 1px solid ;
+}
+.C2{
+	margin:10px 10px;
+}
+input[type=text]{
+	padding: 12px 20px;
+	width:100%;
+	box-sizing:border-box;
+	margin:5px;
+}
+.mar{
+margin: 60px;}
+
+label{
+	float: left;
+}
+textarea{
+	width:100%;
+	box-sizing:border-box;
+	height:180px;
+	padding:12px 20px;
+}
+input[type=submit]{
+		float:left;
+		display: inline-block;
+		text-decoration: none;
+		border: 2px solid #333;
+		padding:12px 36px;
+		font-size: 14px;
+		background:tarnsparant;
+		margin-top:10px;
+}
+

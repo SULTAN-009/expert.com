@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>expert.com coure web site</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	</head>
+
+<body>
+	<!--Header-->
+<header>	
+	<div class="logo">
+        <img width="200px" src="images/logo.png">
+    </div>
+<nav>
+	<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about us.html">About us</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact us.html">Contact us</a></li>
+			<li><a href="serveses.html">Serveses</a></li>
+			<li><a href="team.html">Team</a></li>
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</header>
+     <!--Header-->
+	 
+	<div class="inner-banner">
+		<div class="text-block">
+			<h1> ABOUT US</h1>
+			<p><h4>About us page will be go here </h4></p>
+		</div>
+	</div>
+<div class="row">
+<div class="col-6">
+<img src="images/inner.jpg">
+</div>
+<div class="col-6">
+<p> <h4>Front-End Development</h4>
+
+User Interface (UI): Front-end developers focus on the visual aspects of a website that users interact with directly. This involves designing the layout, navigation, and overall look and feel of the site.
+User Experience (UX): Ensuring a positive and intuitive user experience is crucial. Front-end developers work on optimizing how users interact with the website, making it easy to navigate and use.
+Technologies: Front-end technologies include HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript. Frameworks like React, Angular, and Vue.js are also commonly used.
+<h4>Back-End Development:</h4>
+Server-Side Logic: Back-end developers focus on the server-side of web development. They are responsible for building the server, databases, and application logic that enable the website to function.
+Data Management: Back-end developers work with databases to store, retrieve, and manipulate data. Common database systems include MySQL, PostgreSQL, and MongoDB.
+Server-Side Languages: Popular back-end programming languages include Python, Ruby, PHP, Java, and Node.js. Frameworks like Django (Python), Ruby on Rails (Ruby), and Express.js (Node.js) are commonly used to streamline development.
+<h4>Full-Stack Development:</h4>
+Full-stack developers are proficient in both front-end and back-end development. They can work on all aspects of a web application,
+ from designing the user interface to implementing server-side logic.</p>
+</div>
+
+</div>
+<h2 class="head">ABOUT US</h2>
+<div class="row about">
+
+	<p> <h4>Front-End Development</h4>
+
+	<h5>User Interface (UI): Front-end developers focus on the visual aspects of a website that users interact with directly. This involves designing the layout, navigation, and overall look and feel of the site.
+	User Experience (UX): Ensuring a positive and intuitive user experience is crucial. Front-end developers work on optimizing how users interact with the website, making it easy to navigate and use.
+	Technologies: Front-end technologies include HTML (Hypertext Markup Language),
+	CSS (Cascading Style Sheets), and JavaScript. Frameworks like React, Angular, and Vue.js are also commonly used.</h5><br>
+	<h4>Back-End Development:</h4>
+	<h5>Server-Side Logic: Back-end developers focus on the server-side of web development. They are responsible for building the server, databases, and application logic that enable the website to function.
+	Data Management: Back-end developers work with databases to store, retrieve, and manipulate data. Common database systems include MySQL, PostgreSQL, and MongoDB.
+	Server-Side Languages: Popular back-end programming languages include Python, Ruby, PHP,
+	Java, and Node.js. Frameworks like Django (Python), Ruby on Rails (Ruby), and Express.js (Node.js) are commonly used to streamline development.<br></h5>
+	<h4>Full-Stack Development:</h4>
+	<h5>Full-stack developers are proficient in both front-end and back-end development. They can work on all aspects of a web application,
+	 from designing the user interface to implementing server-side logic.</h5></p>
+
+
+</div>
+	
+	<!--footer-->
+<footer>
+<div class="row container ">
+	<div class="col-3">
+	<h3>CONTACT US</h3>
+		<ul>
+			<li>first menu</li>
+			<li>sencond menu</li>
+			<li>third menu</li>
+			<li>fourth menu</li>
+		</ul>
+	</div>
+
+	<div class="col-3">
+	<h3>TEAM</h3>
+		<ul>
+			<li>first menu</li>
+			<li>sencond menu</li>
+			<li>third menu</li>
+			<li>fourth menu</li>
+		</ul>
+	</div>
+
+	<div class="col-3">
+	<h3>BLOGS</h3>
+		<ul>
+			<li>first menu</li>
+			<li>sencond menu</li>
+			<li>third menu</li>
+			<li>fourth menu</li>
+		</ul>
+	</div>
+<div class="col-3">
+	<h3>ABOUT US</h3>
+		<ul>
+			<li>first menu</li>
+			<li>sencond menu</li>
+			<li>third menu</li>
+			<li>fourth menu</li>
+		</ul>
+	</div>
+
+</div>
+
+
+</footer>	
+
+<div class="copywrite container">
+	<p> COPYWRITE 2024 / www.shahzadoffice.com / </p>
+</div>	
+	
+	
+	
+	
+	<!--footer-->
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+	navLinks.style.left = "0";
+}
+function hideMenu() {
+	navLinks.style.left = "-200px";
+}
+
+</script>
+
+
+</body>
+
+
+</html>
